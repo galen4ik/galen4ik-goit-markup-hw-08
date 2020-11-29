@@ -1,0 +1,10 @@
+.features {
+  @extend %section;
+}
+.container {
+  @extend %container;
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
+}

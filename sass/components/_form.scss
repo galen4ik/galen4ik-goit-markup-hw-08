@@ -1,0 +1,18 @@
+.form {
+  text-align: center;
+
+  .form-title {
+    @extend %form-title;
+    margin-top: 0;
+  }
+
+  .form-list {
+    @extend %list;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
