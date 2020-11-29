@@ -1,12 +1,13 @@
 .info-list {
   @extend %list;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: inline-block;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
 
-  .item:not(:last-child) {
-    margin-right: 50px;
-  }
+  // .item:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .info-link {
