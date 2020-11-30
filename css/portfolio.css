@@ -81,6 +81,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header-page .container {
+    display: flex;
     justify-content: space-between;
   }
 }

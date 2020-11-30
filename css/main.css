@@ -124,6 +124,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header-page .container {
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -144,12 +145,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
   }
 }
 
