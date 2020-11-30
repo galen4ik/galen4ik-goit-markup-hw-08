@@ -11,7 +11,6 @@ img, .team-card img {
 }
 
 .header-page .container, .container, .footer .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -129,13 +128,6 @@ body {
   }
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -145,6 +137,12 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -261,7 +259,7 @@ body {
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
+  border: none;
   background-color: transparent;
 }
 
@@ -510,11 +508,6 @@ body {
   background-position: center;
   background-origin: border-box;
   background-size: contain;
-}
-
-.features-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .features-list .features-item {

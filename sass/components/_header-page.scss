@@ -7,8 +7,7 @@
 
   .container {
     @extend %container;
-
-    // display: flex;
+    display: flex;
     align-items: center;
 
     @media screen and (max-width: 767px) {
