@@ -73,6 +73,13 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 1200px) {
+  .header-page {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
 .header-page .container {
   display: flex;
   align-items: center;

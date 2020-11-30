@@ -1,6 +1,10 @@
 .team {
-  @extend %section;
   background-color: $bcg-team-color;
+
+  @media screen and (max-widht: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .container {
@@ -9,7 +13,7 @@
 
 .team-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
 
   color: $primary-text-color;
   font-weight: 700;
@@ -17,4 +21,8 @@
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (max-widht: 767px) {
+    margin-bottom: 30px;
+  }
 }
