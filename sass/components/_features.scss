@@ -1,5 +1,7 @@
 .features {
-  @extend %section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // @extend %section;
 }
 .container {
   @extend %container;

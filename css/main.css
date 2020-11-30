@@ -38,7 +38,7 @@ img, .team-card img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features, .team, .clients {
+.team, .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -118,6 +118,7 @@ body {
 }
 
 .header-page .container {
+  display: flex;
   align-items: center;
 }
 
@@ -317,17 +318,8 @@ body {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2f303a;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-pic.jpg);
   background-repeat: no-repeat;
@@ -510,19 +502,24 @@ body {
   background-size: contain;
 }
 
-.features-list .features-item {
-  width: 270px;
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.features-list .features-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .features-list .item {
+    width: 100%;
+  }
+  .features-list .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.features-list .features-title {
-  margin: 0;
+.features-title {
+  margin-top: 0;
   margin-bottom: 10px;
-  width: 270px;
-  height: 16px;
+  text-align: center;
   color: #212121;
   font-weight: 700;
   font-size: 14px;
@@ -531,15 +528,17 @@ body {
   text-transform: uppercase;
 }
 
-.features-list .features-text {
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
+}
+
+.features-text {
   margin: 0;
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  width: 270px;
-  height: 75px;
 }
 
 .icon-box {
