@@ -10,7 +10,7 @@ img, .team-card img {
   height: auto;
 }
 
-.header-page .container, .container, .footer .container {
+.header-page .container, .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -36,11 +36,6 @@ img, .team-card img {
   color: #ffffff;
   background-color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .checkbox, .visually-hidden {
@@ -620,13 +615,15 @@ body {
 }
 
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
-@media screen and (max-widht: 767px) {
+@media screen and (min-widht: 1200px) {
   .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -634,10 +631,8 @@ body {
   margin-top: 0;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 @media screen and (max-widht: 767px) {
@@ -646,13 +641,14 @@ body {
   }
 }
 
-.team-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-widht: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-card {
-  width: 270px;
   padding-bottom: 24px;
   background-color: #ffffff;
   text-align: center;
@@ -665,22 +661,18 @@ body {
 }
 
 .team-card .team-names {
+  margin: 0;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .team-card .team-text {
+  margin: 0;
   color: #757575;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  margin: 0;
 }
 
 .social-list {
@@ -699,25 +691,43 @@ body {
   fill: currentColor;
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .client-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
   text-align: center;
-  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .client-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.client-list .item:not(:last-child) {
-  margin-right: 30px;
+.client-list .item {
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
+  min-height: 90px;
 }
 
 .client-list .icon {
@@ -730,8 +740,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -744,19 +753,14 @@ body {
 }
 
 .footer {
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .address-footer {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .address-footer .footer-logo {
@@ -765,10 +769,9 @@ body {
   color: #2196f3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   font-style: normal;
-  list-style: 1.2;
-  letter-spacing: 0.03em;
+  line-height: 1.16;
   text-decoration: none;
 }
 
@@ -784,7 +787,6 @@ body {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -794,11 +796,11 @@ body {
 
 .address-footer .f-address-text {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-footer .footer-list .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-footer .footer-info {
@@ -806,7 +808,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -816,7 +817,7 @@ body {
 }
 
 .footer-social {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .footer-social .footer-social-title {
@@ -825,10 +826,8 @@ body {
   padding: 0;
   color: #ffffff;
   font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -852,29 +851,38 @@ body {
   color: #ffffff;
 }
 
-.subs-title {
+.footer-form {
+  text-align: center;
+}
+
+.footer-form .subs-title {
   display: inline-block;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14px;
   text-transform: uppercase;
 }
 
-.subs-div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+.footer-form .subs-div {
+  text-align: center;
 }
 
-.subs-div .input-subscribe {
+@media screen and (min-width: 1200px) {
+  .footer-form .subs-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+}
+
+.footer-form .input-subscribe {
   display: inline-block;
-  min-width: 358px;
-  height: 50px;
+  margin-bottom: 20px;
   padding: 15px 16px;
-  margin-right: 12px;
+  min-width: 358px;
+  width: 100%;
+  height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -882,12 +890,11 @@ body {
   border-radius: 4px;
 }
 
-.subs-div .btn-subscribe {
+.footer-form .btn-subscribe {
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #2196f3;
@@ -903,12 +910,12 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subs-div .btn-subscribe:hover, .subs-div .btn-subscribe:focus {
+.footer-form .btn-subscribe:hover, .footer-form .btn-subscribe:focus {
   color: #2196f3;
   background-color: #ffffff;
 }
 
-.subs-div .btn-icon {
+.footer-form .btn-icon {
   margin-left: 10px;
   fill: currentColor;
 }

@@ -1,11 +1,19 @@
 .client-list {
   @extend %list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 
-  .item:not(:last-child) {
-    margin-right: 30px;
+  .item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+    min-height: 90px;
   }
+  // justify-content: center;
+
+  // .item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   .icon {
     margin: 0;
@@ -17,8 +25,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 90px;
+    height: 100%;
+    // width: 170px;
+    // height: 90px;
     border: 1px solid $icon-fill-color;
     border-radius: 4px;
     color: $icon-fill-color;

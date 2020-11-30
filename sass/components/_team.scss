@@ -1,28 +1,30 @@
 .team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: $bcg-team-color;
 
-  @media screen and (max-widht: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @media screen and (min-widht: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-}
-
-.container {
-  @extend %container;
 }
 
 .team-title {
   margin-top: 0;
-  // margin-bottom: 50px;
 
   color: $primary-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+
+  font-size: 28px;
   text-align: center;
-  letter-spacing: 0.03em;
 
   @media screen and (max-widht: 767px) {
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-widht: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }

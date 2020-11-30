@@ -1,26 +1,35 @@
-.subs-title {
-  display: inline-block;
-  margin-bottom: 20px;
+.footer-form {
+  text-align: center;
 
-  color: $primary-bg;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  .subs-title {
+    display: inline-block;
+    margin-bottom: 20px;
 
-.subs-div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+    color: $primary-bg;
+    font-weight: 700;
+    line-height: 1.14px;
+    text-transform: uppercase;
+  }
+
+  .subs-div {
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+  }
 
   .input-subscribe {
     display: inline-block;
-    min-width: 358px;
-    height: 50px;
+    margin-bottom: 20px;
     padding: 15px 16px;
-    margin-right: 12px;
+    min-width: 358px;
+    width: 100%;
+    height: 50px;
+
+    // margin-right: 12px;
 
     background-color: transparent;
 
@@ -35,7 +44,8 @@
     align-items: center;
     justify-content: center;
     min-width: 200px;
-    height: 50px;
+
+    // height: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: $accent-color;
