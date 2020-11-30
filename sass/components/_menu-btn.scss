@@ -2,7 +2,7 @@
   display: inline-flex;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 1px solid black;
   background-color: transparent;
 
   &:hover,
@@ -24,6 +24,10 @@
   }
 
   &.is-open .icon-menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }

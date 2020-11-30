@@ -3,7 +3,18 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+
+    & .item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      & .item:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
   }
+
   // display: flex;
   // margin-left: 93px;
 
@@ -16,10 +27,15 @@
   @extend %link;
 
   @media screen and (max-width: 767px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
-  // padding-top: 32px;
-  // padding-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
   color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
