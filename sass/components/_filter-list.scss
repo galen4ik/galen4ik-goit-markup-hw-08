@@ -9,6 +9,10 @@
     margin-bottom: 15px;
   }
 
+  .item:nth-child(3) {
+    margin-right: 0;
+  }
+
   .item:not(:last-child) {
     margin-right: 8px;
   }

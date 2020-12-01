@@ -1,5 +1,19 @@
 .checkbox-field {
+  display: inline-block;
   margin-bottom: 30px;
-  display: flex;
-  align-items: flex-start;
+  // display: flex;
+  // align-items: flex-start;
+
+  .checkbox {
+    @extend %visually-hidden;
+
+    &:checked + .checkbox-label::before {
+      background-image: url(../img/icon-check.svg);
+      background-color: $accent-color;
+      border-color: $accent-color;
+      background-position: center;
+      background-origin: border-box;
+      background-size: contain;
+    }
+  }
 }

@@ -1,9 +1,11 @@
 .offer-list {
   @extend %list;
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin: -15px;
+  @media screen and (min-widht: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
   & .offer-card:not(:last-child) {
     margin-bottom: 30px;
@@ -11,8 +13,6 @@
   .offer-card {
     // width: 100%;
 
-    // width: 370px;
-    // margin: 15px;
     background-color: $primary-bg;
     box-sizing: border-box;
 
@@ -22,6 +22,11 @@
     &:focus-within {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+      @media screen and (min-widht: $desktop) {
+        width: 370px;
+        margin: 15px;
+      }
     }
   }
 
