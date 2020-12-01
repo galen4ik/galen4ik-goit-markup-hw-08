@@ -295,6 +295,7 @@ body {
 .menu-container {
   width: 100%;
   background-color: #ffffff;
+  border-top: 1px solid #ececec;
 }
 
 @media screen and (max-width: 767px) {
@@ -891,7 +892,7 @@ body {
 }
 
 .footer-form .btn-subscribe {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 200px;
