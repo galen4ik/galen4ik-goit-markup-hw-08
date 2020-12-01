@@ -1,12 +1,18 @@
 .offer-list {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
 
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin: -15px;
+
+  & .offer-card:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .offer-card {
-    width: 370px;
-    margin: 15px;
+    // width: 100%;
+
+    // width: 370px;
+    // margin: 15px;
     background-color: $primary-bg;
     box-sizing: border-box;
 

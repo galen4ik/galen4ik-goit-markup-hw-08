@@ -1,9 +1,7 @@
 .filter {
-  @extend %section;
-
-  .container {
-    @extend %container;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // @extend %section;
 
   .visually-hidden {
     @extend %visually-hidden;
