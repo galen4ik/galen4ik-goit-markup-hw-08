@@ -31,7 +31,9 @@
 
 .info-link {
   @extend %link;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  // display: inline-block;
 
   color: $light-text-color;
   font-weight: 500;

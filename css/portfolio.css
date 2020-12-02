@@ -200,7 +200,8 @@ body {
 }
 
 .info-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 12px;

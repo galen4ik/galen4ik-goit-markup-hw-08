@@ -261,7 +261,8 @@ body {
 }
 
 .info-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #757575;
   font-weight: 500;
   font-size: 12px;
@@ -585,10 +586,15 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 767px) {
-  .features-list .item {
-    width: 100%;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
+}
+
+@media screen and (max-width: 767px) {
   .features-list .item:not(:last-child) {
     margin-bottom: 30px;
   }

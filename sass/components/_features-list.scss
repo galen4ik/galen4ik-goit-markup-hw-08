@@ -1,14 +1,21 @@
 .features-list {
   @extend %list;
-  // display: flex;
-  // flex-wrap: wrap;
 
-  @media screen and (max-width: 767px) {
-    .item {
-      width: 100%;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .features-item {
+    @media screen and (min-width: $tablet) {
+      margin: 15px;
+      width: calc ((100% - 60px) / 2);
     }
+  }
 
-    .item:not(:last-child) {
+  .features-item:not(:last-child) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
@@ -44,8 +51,6 @@
   color: $light-text-color;
   font-weight: 400;
   // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
   // width: 270px;
   // height: 75px;
 }
