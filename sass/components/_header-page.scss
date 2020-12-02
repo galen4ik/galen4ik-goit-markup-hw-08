@@ -2,7 +2,12 @@
   position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
-  // border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 24px;
@@ -10,7 +15,6 @@
   }
 
   .container {
-    // @extend %container;
     display: flex;
     align-items: center;
 

@@ -6,11 +6,20 @@
     & .item:not(:last-child) {
       margin-bottom: 16px;
     }
+  }
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
     }
   }
+
   // display: flex;
   // align-items: center;
   // margin-left: auto;
@@ -22,11 +31,12 @@
 
 .info-link {
   @extend %link;
-  display: block;
+  display: inline-block;
 
   color: $light-text-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
+  // font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
@@ -41,4 +51,8 @@
 .icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+  }
 }
