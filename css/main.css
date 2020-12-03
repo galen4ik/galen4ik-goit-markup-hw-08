@@ -868,10 +868,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-tablet {
+  .footer .footer-cont {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -881,7 +881,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .address-footer {
-    margin-bottom: 0;
+    width: 354px;
+    margin-right: 30px;
   }
 }
 
@@ -950,7 +951,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-social {
-    margin-bottom: 0;
+    width: 354px;
   }
 }
 
@@ -993,6 +994,12 @@ body {
 
 .footer-form {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form {
+    width: 450px;
+  }
 }
 
 .footer-form .subs-title {

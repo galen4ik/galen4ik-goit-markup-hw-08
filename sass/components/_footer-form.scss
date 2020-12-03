@@ -1,6 +1,9 @@
 .footer-form {
   text-align: center;
 
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
   .subs-title {
     display: block;
     margin-bottom: 20px;
