@@ -1,6 +1,13 @@
 .footer-social {
   margin-bottom: 60px;
-  // margin-right: 93px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 
   .social-list {
     @extend %list;

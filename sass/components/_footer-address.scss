@@ -1,6 +1,13 @@
 .address-footer {
   margin-bottom: 60px;
-  // margin-right: 70px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 
   .footer-logo {
     display: inline-block;
