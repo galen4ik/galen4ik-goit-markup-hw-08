@@ -12,16 +12,12 @@
 
 .team-title {
   margin-top: 0;
-
+  margin-bottom: 30px;
   color: $primary-text-color;
   font-weight: 700;
 
   font-size: 28px;
   text-align: center;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
