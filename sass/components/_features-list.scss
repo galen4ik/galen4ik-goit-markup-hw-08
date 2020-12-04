@@ -1,14 +1,18 @@
 .features-list {
   @extend %list;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
 
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
   .features-item {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin: 15px;
       width: calc((100% - 60px) / 2);
     }
@@ -20,47 +24,52 @@
     }
   }
 
-  // .features-item {
-  //   width: 270px;
-
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-}
-
-.features-title {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  // width: 270px;
-  // height: 16px;
-
-  color: $primary-text-color;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
+  .features-item {
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
   }
-}
 
-.features-text {
-  margin: 0;
+  .features-item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
 
-  color: $light-text-color;
-  font-weight: 400;
-  // font-size: 14px;
-  // width: 270px;
-  // height: 75px;
-}
+  .features-title {
+    margin-top: 0;
+    margin-bottom: 10px;
 
-.icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-color: $bcg-team-color;
+    // width: 270px;
+    // height: 16px;
+
+    color: $primary-text-color;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  .features-text {
+    margin: 0;
+
+    color: $light-text-color;
+    font-weight: 400;
+    // font-size: 14px;
+    // width: 270px;
+    // height: 75px;
+  }
+
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $bcg-team-color;
+  }
 }

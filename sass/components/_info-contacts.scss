@@ -2,31 +2,35 @@
   @extend %list;
   display: inline-block;
 
-  @media screen and (max-width: 767px) {
-    & .item:not(:last-child) {
-      margin-bottom: 16px;
-    }
-  }
-
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     margin-left: auto;
     display: flex;
     flex-direction: column;
   }
 
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
   .item:not(:last-child) {
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .item:not(:last-child) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-bottom: 10px;
     }
   }
 
-  // display: flex;
-  // align-items: center;
-  // margin-left: auto;
-
-  // .item:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  .item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .info-link {

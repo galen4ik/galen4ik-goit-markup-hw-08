@@ -24,8 +24,10 @@
     }
   }
 
-  // .site-nav {
-  //   display: flex;
-  //   align-items: center;
-  // }
+  .site-nav {
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

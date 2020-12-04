@@ -123,6 +123,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-page .site-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -240,13 +247,7 @@ body {
   display: inline-block;
 }
 
-@media screen and (max-width: 767px) {
-  .info-list .item:not(:last-child) {
-    margin-bottom: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-list {
     margin-left: auto;
     display: flex;
@@ -254,9 +255,29 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .info-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-list .item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-list .item:not(:last-child) {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-list .item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -592,7 +613,14 @@ body {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list {
     display: flex;
     flex-wrap: wrap;
@@ -600,7 +628,13 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .features-list {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-list .features-item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
@@ -613,7 +647,19 @@ body {
   }
 }
 
-.features-title {
+@media screen and (min-width: 1200px) {
+  .features-list .features-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list .features-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-list .features-title {
   margin-top: 0;
   margin-bottom: 10px;
   color: #212121;
@@ -623,18 +669,18 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .features-title {
+  .features-list .features-title {
     text-align: center;
   }
 }
 
-.features-text {
+.features-list .features-text {
   margin: 0;
   color: #757575;
   font-weight: 400;
 }
 
-.icon-box {
+.features-list .icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
