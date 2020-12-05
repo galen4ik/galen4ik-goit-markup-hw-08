@@ -14,7 +14,7 @@ img, .team-card img {
   text-decoration: none;
 }
 
-.hero .btn, .btn-submit {
+.btn-submit {
   display: inline-block;
   min-width: 200px;
   padding-top: 10px;
@@ -385,13 +385,19 @@ body {
   margin-right: auto;
   text-align: center;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-pic.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     display: flex;
     align-items: center;
@@ -401,30 +407,68 @@ body {
   }
 }
 
-.hero .hero-title {
+@media screen and (min-width: 481px) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tablet-@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tablet-@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-desk@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-desk@2x.jpg);
+  }
+}
+
+.hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #ffffff;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
+  color: #ffffff;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 1200px) {
-  .hero .hero-title {
+  .hero-title {
     font-size: 44px;
     line-height: 1.36;
   }
 }
 
-.hero .btn {
-  letter-spacing: 0.06em;
+.btn {
+  display: inline-block;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero .btn:hover, .hero .btn:focus {
-  border-color: #2196f3;
+.btn:hover, .btn:focus {
+  color: #2196f3;
+  background-color: #ffffff;
 }
 
 .backdrop {
