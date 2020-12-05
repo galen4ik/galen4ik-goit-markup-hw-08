@@ -391,6 +391,16 @@ body {
   background-position: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+}
+
 .hero .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -400,6 +410,13 @@ body {
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero .btn {
@@ -688,6 +705,10 @@ body {
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
+}
+
+.features-list .icon {
+  margin: 0;
 }
 
 .occupation {
