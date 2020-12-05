@@ -349,6 +349,13 @@ body {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filter-list {
   margin-bottom: 40px;
   display: flex;
@@ -412,10 +419,23 @@ body {
   }
 }
 
+.offer-list .link:hover .offer-overlay,
+.offer-list .link:focus .offer-overlay {
+  transform: translateY(0);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) {
   .offer-list .offer-card {
     margin: 15px;
     width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .offer-list .offer-card {
+    margin: 15px;
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -425,27 +445,13 @@ body {
   }
 }
 
-.offer-list .offer-card {
-  background-color: #ffffff;
-  box-sizing: border-box;
+.offer-list .link {
+  color: #757575;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.offer-list .offer-card:hover, .offer-list .offer-card:focus-within {
+.offer-list .link:hover, .offer-list .link:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-@media screen and (min-widht: 1200px) {
-  .offer-list .offer-card:hover, .offer-list .offer-card:focus-within {
-    width: 370px;
-    margin: 15px;
-  }
-}
-
-.offer-list .link:hover .offer-overlay,
-.offer-list .link:focus .offer-overlay {
-  transform: translateY(0);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .offer-thumb {
@@ -468,7 +474,6 @@ body {
 @media screen and (min-width: 1200px) {
   .offer-thumb .offer-overlay {
     padding: 63px 24px;
-    background-color: rgba(33, 150, 243, 0.9);
   }
 }
 
@@ -546,6 +551,7 @@ body {
   .footer .container {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -581,6 +587,7 @@ body {
 @media screen and (min-width: 1200px) {
   .address-footer .footer-logo {
     font-size: 26px;
+    line-height: 1.19;
   }
 }
 
@@ -641,7 +648,7 @@ body {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-social {
     width: 354px;
   }
@@ -650,6 +657,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -688,9 +696,15 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    text-align: start;
   }
 }
 
@@ -707,15 +721,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form .subs-div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form .subs-div {
     display: flex;
     flex-direction: column;
@@ -723,7 +729,13 @@ body {
   }
 }
 
-.footer-form .input-subscribe {
+@media screen and (min-width: 1200px) {
+  .footer-form .subs-div {
+    display: flex;
+  }
+}
+
+.footer-form .subs-div .input-subscribe {
   display: inline-block;
   width: 100%;
   max-width: 450px;
@@ -738,13 +750,14 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-form .input-subscribe {
-    min-width: 358px;
+  .footer-form .subs-div .input-subscribe {
+    width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
-.footer-form .btn-subscribe {
+.footer-form .subs-div .btn-subscribe {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -764,12 +777,12 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form .btn-subscribe:hover, .footer-form .btn-subscribe:focus {
+.footer-form .subs-div .btn-subscribe:hover, .footer-form .subs-div .btn-subscribe:focus {
   color: #2196f3;
   background-color: #ffffff;
 }
 
-.footer-form .btn-icon {
+.footer-form .subs-div .btn-icon {
   margin-left: 10px;
   fill: currentColor;
 }

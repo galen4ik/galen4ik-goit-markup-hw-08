@@ -7,10 +7,21 @@
     margin: -15px;
   }
 
+  & .link:hover .offer-overlay,
+  & .link:focus .offer-overlay {
+    transform: translateY(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .offer-card {
     @media screen and (min-width: $tablet) {
       margin: 15px;
       width: calc((100% - 60px) / 2);
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin: 15px;
+      flex-basis: calc((100% - 90px) / 3);
     }
   }
 
@@ -18,34 +29,5 @@
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
-  }
-
-  .offer-card {
-    // width: 100%;
-    background-color: $primary-bg;
-    box-sizing: border-box;
-
-    transition: 250ms $timing-function;
-
-    &:hover,
-    &:focus-within {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
-      @media screen and (min-widht: $desktop) {
-        width: 370px;
-        margin: 15px;
-      }
-    }
-  }
-
-  & .link:hover .offer-overlay,
-  & .link:focus .offer-overlay {
-    transform: translateY(0);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  & .link {
-    @extend %link;
   }
 }
