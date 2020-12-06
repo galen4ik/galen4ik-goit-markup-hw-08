@@ -25,10 +25,6 @@
 // display: flex;
 // margin-left: 93px;
 
-// .item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
 .current {
   @extend %link;
   position: relative;

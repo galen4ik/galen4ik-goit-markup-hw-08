@@ -2,10 +2,6 @@
   position: relative;
   overflow: hidden;
 
-  .thumb-img {
-    @extend %img;
-  }
-
   .offer-overlay {
     position: absolute;
     top: 0;

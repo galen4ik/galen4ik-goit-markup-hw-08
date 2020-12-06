@@ -21,7 +21,6 @@
 }
 
 .team-card {
-  // width: 270px;
   padding-bottom: 24px;
   background-color: $primary-bg;
   text-align: center;
@@ -30,8 +29,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
   img {
-    @extend %img;
     margin-bottom: 30px;
   }
 
