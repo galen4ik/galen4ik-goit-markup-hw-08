@@ -1,13 +1,12 @@
-.offer-list .link {
+.offer-link {
   @extend %link;
 
   color: $light-text-color;
 
-  transition: 250ms $timing-function;
+  transition: box-shadow 250ms $timing-function;
 
-  &:hover,
-  &:focus-within {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover .offer-overlay,
+  &:focus .offer-overlay {
+    transform: translateY(0);
   }
 }

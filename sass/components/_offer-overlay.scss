@@ -1,22 +1,18 @@
-.offer-thumb {
-  position: relative;
-  overflow: hidden;
+.offer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
 
-  .offer-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
 
-    width: 100%;
-    height: 100%;
-    padding: 0 24px;
+  background-color: rgba(33, 150, 243, 0.9);
 
-    background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms $timing-function;
-  }
+  transition: transform 250ms $timing-function;
 
   .overlay-text {
     font-weight: 400;
