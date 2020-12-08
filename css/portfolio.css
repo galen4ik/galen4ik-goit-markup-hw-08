@@ -483,6 +483,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 340px) {
+  .offer-overlay .overlay-text {
+    font-size: 14px;
+  }
+}
+
 .offer-thumb {
   position: relative;
   overflow: hidden;

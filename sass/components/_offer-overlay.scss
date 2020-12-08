@@ -19,5 +19,9 @@
     font-size: 18px;
     line-height: 1.56;
     color: $primary-bg;
+
+    @media screen and (max-width: 340px) {
+      font-size: 14px;
+    }
   }
 }
